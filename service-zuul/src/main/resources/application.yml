@@ -1,0 +1,25 @@
+server:
+  port: 9000
+
+spring:
+  application:
+    name: service-zuul
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
+zuul:
+  routes:
+    api-a:
+      path: /loginController/**
+      serviceId: service-login-api
+    auth:
+      path: /helloController/**
+      serviceId: service-hello-api
+  add-host-header: true
+  sensitive-headers:
+
+ribbon:
+  ReadTimeout: 100000
+  ConnectTimeout: 1000
+

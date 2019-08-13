@@ -1,0 +1,14 @@
+server:
+  port: 8880
+
+spring:
+  application:
+    name: service-hello-api
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
+
+feign:
+  hystrix:
+    enabled: true
