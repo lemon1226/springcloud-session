@@ -11,10 +11,10 @@ eureka:
 zuul:
   routes:
     api-a:
-      path: /loginController/**
+      path: /login/**
       serviceId: service-login-api
     auth:
-      path: /helloController/**
+      path: /hello/**
       serviceId: service-hello-api
   add-host-header: true
   sensitive-headers:
