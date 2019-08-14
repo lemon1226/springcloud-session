@@ -3,4 +3,4 @@
 
 需要引用我的另一个my-spring-boot-configure项目
 
-拉取my-spring-boot-configure，maven编译到本地即可
+拉取my-spring-boot-configure，maven install到本地即可
