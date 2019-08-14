@@ -18,7 +18,6 @@ public class HelloController {
 
     @GetMapping("say")
     public String say(){
-        HttpSession session = (HttpSession) RequestContext.getLocalRequest().getSession();
         return "你好, " + ((UserInfo)RequestContext.getSessionUser()).getUsername();
     }
 }

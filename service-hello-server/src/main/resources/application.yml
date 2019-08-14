@@ -29,3 +29,6 @@ eureka:
     service-url:
       defaultZone: http://localhost:8000/eureka/
 
+mySession:
+  name: SESSION
+
